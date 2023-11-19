@@ -1,0 +1,16 @@
+extends layout
+
+include error_form
+
+block content
+    h1 Login Form
+    form(method='POST' action='' class='user-form')
+        h2 
+            label(for='username') Username:
+        input(type='text' name='username' required='true')
+        h2
+            label(for='password') Password:
+        input(type='password' name='password' required='true')
+        button(type='submit') Submit
+    
+    +errors_form

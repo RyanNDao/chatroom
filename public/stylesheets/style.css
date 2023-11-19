@@ -1,0 +1,104 @@
+body {
+  padding: 50px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: calc(100vh - 100px);
+  width: calc(100vw - 100px);
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px;
+  height: 40%;
+  width: 20%;
+  border: 5px solid grey;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.user-form > button {
+  width: 40%;
+  align-self: center;
+}
+
+.chat-container{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.message-box {
+  width: 25%;
+  border: 3px solid grey;
+  box-shadow: 1px 1px 1px black;
+  background-color: rgba(168, 157, 233, .75);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.message-board {
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+.post-message-container{
+  margin-top: auto;
+  height: 20%;
+}
+
+.post-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  height: 100%;
+}
+
+.post-message textarea {
+  height: 90%;
+  width: 70%;
+  flex-grow: 1;
+}
+
+.chat-form {
+  flex-grow: 1;
+  height: 80%;
+  display: flex;
+  gap: 10px;
+}
+
+.logged-in-message {
+  position: sticky;
+  top: 0px;
+  margin: 0;
+  padding: 5px 0px;
+  background-color: rgb(168, 157, 233);
+}
+
+h2, h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: rgb(204, 134, 5);
+}
+
+.red{
+  color: red;
+}

@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1 Clubhouse
+  if user
+    div
+      h3 Welcome #{user.username} 
+        | (
+        if user.isAdmin
+          span.blue Admin account
+        else if user.validated
+          span.orange User account authenticated
+        else
+          span.red User account unauthenticated
+        | )
+      a(href='/chatroom') Chat Now
+      span  
+      a(href='/logout')  Logout
+
+  else
+    p Welcome to the club, if you are a member, please log in
+      span  
+      a(href='/login') Log In
+    
+    p If not, sign up and enter the secret code to get validated
+      span  
+      a(href='/signup')  Sign Up
+
+    p Check out the
+      span  
+      a(href='/chatroom') chatroom
+

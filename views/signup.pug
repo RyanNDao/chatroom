@@ -1,0 +1,22 @@
+extends layout
+
+include error_form
+
+block content
+    h1 Signup Form
+    form(method='POST' action='' class='user-form')
+        h2 
+            label(for='username') Username:
+        input(type='text' name='username' required='true')
+        h2
+            label(for='password') Password:
+        input(type='password' name='password' required='true')
+        h2
+            label(for='confirmPassword') Confirm Password:
+        input(type='password' name='confirmPassword' required='true')
+        h2
+            label(for='secretCode') SECRET CODE:
+        input(type='text' name='secretCode')
+        button(type='submit') Submit
+    
+    +errors_form

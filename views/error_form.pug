@@ -1,0 +1,6 @@
+mixin errors_form
+
+    if errors
+        h3 Errors:
+            each error in errors
+                li(style='color:red;') #{error.msg}
